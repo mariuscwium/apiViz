@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Starships component Displays when mounted 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Character starships
+  </h1>
+  <ul
+    className="sc-bdVaJa jJjsEG"
+  >
+    <li
+      className="sc-bwzfXH fQvBvU"
+    >
+      Imperial shuttle
+    </li>
+  </ul>
+</div>
+`;
