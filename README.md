@@ -1,15 +1,19 @@
+# apiViz
+
+An API visualisation demo to showcase D3.js and React.js.
+
 ## Prerequisites
 
-- yarn: `npm install -g yarn`
+-   yarn: `npm install -g yarn`
 
 ## Setup
 
-- `yarn install`
+-   `yarn install`
 
 ## Testing
 
-- Single run: `yarn test`
+-   Single run: `yarn test`
 
 ## Development
 
-- `yarn start`
+-   `yarn start`

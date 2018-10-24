@@ -1,8 +1,8 @@
 import React from 'react';
-import SWAPI from '../app/components/star-wars/SWAPI.jsx';
+import Api from '../app/components/explorer/Api.jsx';
 import renderer from 'react-test-renderer';
 
-describe('Testing SWAPI component', () => {
+describe('Testing Api component', () => {
     beforeEach(() => {
         fetch.resetMocks();
     });
@@ -10,12 +10,12 @@ describe('Testing SWAPI component', () => {
     test('Calls the add promise prop', () => {
         fetch.mockResponseOnce(JSON.stringify({ test }));
         const addPromise = jest.fn();
-        const component = renderer.create(
-            <SWAPI endpoint="test" addPromise={addPromise}>
+        renderer.create(
+            <Api endpoint="test" addPromise={addPromise}>
                 {state => {
                     return null;
                 }}
-            </SWAPI>
+            </Api>
         );
         expect(addPromise).toHaveBeenCalled();
     });
@@ -29,7 +29,7 @@ describe('Testing SWAPI component', () => {
         };
 
         const component = renderer.create(
-            <SWAPI endpoint="test" addPromise={addPromise}>
+            <Api endpoint="test" addPromise={addPromise}>
                 {state => {
                     if (state.data) {
                         return <div>{state.data.title}</div>;
@@ -37,7 +37,7 @@ describe('Testing SWAPI component', () => {
                         return null;
                     }
                 }}
-            </SWAPI>
+            </Api>
         );
 
         await promise;

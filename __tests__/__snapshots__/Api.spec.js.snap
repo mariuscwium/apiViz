@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Testing SWAPI component Displays films when mounted 1`] = `
+exports[`Testing Api component Displays films when mounted 1`] = `
 <div>
   A New Hope
 </div>

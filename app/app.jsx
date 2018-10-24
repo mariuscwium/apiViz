@@ -1,8 +1,9 @@
 import React from 'react';
-import SWAPI from './components/star-wars/SWAPI.jsx';
-import FilmsView from './components/star-wars/filmsView.jsx';
-import Characters from './components/star-wars/characters.jsx';
-import Starships from './components/star-wars/starships.jsx';
+// import SWAPI from './components/explorer/Api.jsx';
+import ApiNode from './components/explorer/ApiNode.jsx';
+// import FilmsView from './components/explorer/filmsView.jsx';
+import Characters from './components/explorer/characters.jsx';
+import Starships from './components/explorer/starships.jsx';
 
 export default class StarWarsApp extends React.Component {
     state = {
@@ -21,11 +22,7 @@ export default class StarWarsApp extends React.Component {
         return (
             <div style={{ display: 'flex' }}>
                 <div style={{ flex: 1, padding: '0 1em' }}>
-                    <SWAPI endpoint="https://swapi.co/api/films">
-                        {data => {
-                            return <FilmsView selectFilm={this.selectFilm} {...data} {...this.state} />;
-                        }}
-                    </SWAPI>
+                    <ApiNode endpoint="https://swapi.co/api/people/" />
                 </div>
                 {this.state.selectedFilm && (
                     <div style={{ flex: 1, padding: '0 1em' }}>

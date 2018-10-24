@@ -1,5 +1,4 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
 import { GridItem } from '../ui';
 
 export default class CharacterView extends React.Component {

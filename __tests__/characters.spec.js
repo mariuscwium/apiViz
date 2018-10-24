@@ -1,5 +1,5 @@
 import React from 'react';
-import Characters from '../app/components/star-wars/characters.jsx';
+import Characters from '../app/components/explorer/characters.jsx';
 import renderer from 'react-test-renderer';
 
 describe('Testing Characters component', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Starships from '../app/components/star-wars/starships.jsx';
+import Starships from '../app/components/explorer/starships.jsx';
 import renderer from 'react-test-renderer';
 
 describe('Testing Starships component', () => {

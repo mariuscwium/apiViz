@@ -1,5 +1,5 @@
 import React from 'react';
-import SWAPI from './SWAPI.jsx';
+import SWAPI from './Api.jsx';
 import { Loader, Grid } from '../ui';
 import StarshipView from './starshipView.jsx';
 import withPromises from './withPromises.jsx';

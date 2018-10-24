@@ -1,5 +1,5 @@
 import React from 'react';
-export default class SWAPI extends React.Component {
+export default class Api extends React.Component {
     state = {
         loading: true
     };
@@ -27,6 +27,6 @@ export default class SWAPI extends React.Component {
     }
 }
 
-SWAPI.defaultProps = {
+Api.defaultProps = {
     addPromise: () => {}
 };
