@@ -8,7 +8,8 @@ import ApiNode from './components/explorer/ApiNode.jsx';
 export default class StarWarsApp extends React.Component {
     state = {
         selectedFilm: false,
-        selectedCharacter: false
+        selectedCharacter: false,
+        entryPoint: 'https://swapi.co/api/'
     };
 
     selectFilm = film => {
@@ -22,9 +23,9 @@ export default class StarWarsApp extends React.Component {
         return (
             <div style={{ display: 'flex' }}>
                 <div style={{ flex: 1, padding: '0 1em' }}>
-                    <ApiNode endpoint="https://swapi.co/api/" />
+                    <ApiNode endpoint={this.state.entryPoint} />
                 </div>
-                {this.state.selectedFilm && (
+                {/* {this.state.selectedFilm && (
                     <div style={{ flex: 1, padding: '0 1em' }}>
                         <Characters selectCharacter={this.selectCharacter} {...this.state} />
                     </div>
@@ -33,7 +34,7 @@ export default class StarWarsApp extends React.Component {
                     <div style={{ flex: 1, padding: '0 1em' }}>
                         <Starships {...this.state} />
                     </div>
-                )}
+                )} */}
             </div>
         );
     }

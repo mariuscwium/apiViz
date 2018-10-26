@@ -5,7 +5,7 @@ export default class Api extends React.Component {
     };
     componentDidMount() {
         this.props.addPromise(
-            fetch(this.props.endpoint)
+            fetch(this.props.endpoint, { mode: 'cors' }) // no-cors, cors, *same-origin})
                 .then(function(response) {
                     if (response.ok) {
                         return response.json();
